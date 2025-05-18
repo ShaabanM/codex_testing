@@ -1,0 +1,36 @@
+{
+  "trace_id": "sample-run-001",
+  "agent_name": "demo-agent",
+  "events": [
+    {
+      "id": "1",
+      "timestamp": "2024-05-01T12:00:00",
+      "type": "user_message",
+      "payload": {"text": "Hello"}
+    },
+    {
+      "id": "2",
+      "timestamp": "2024-05-01T12:00:01",
+      "type": "assistant_response",
+      "payload": {"text": "Hi, how can I help?"}
+    },
+    {
+      "id": "3",
+      "timestamp": "2024-05-01T12:00:02",
+      "type": "tool_call",
+      "payload": {"tool": "search", "input": "weather in SF"}
+    },
+    {
+      "id": "4",
+      "timestamp": "2024-05-01T12:00:03",
+      "type": "tool_result",
+      "payload": {"result": "sunny"}
+    },
+    {
+      "id": "5",
+      "timestamp": "2024-05-01T12:00:04",
+      "type": "assistant_response",
+      "payload": {"text": "The weather is sunny"}
+    }
+  ]
+}
