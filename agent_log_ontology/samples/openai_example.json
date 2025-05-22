@@ -1,0 +1,29 @@
+{
+  "id": "run_123",
+  "started_at": "2024-01-01T00:00:00Z",
+  "ended_at": "2024-01-01T00:01:00Z",
+  "steps": [
+    {
+      "id": "step_1",
+      "type": "message",
+      "role": "user",
+      "content": "Hello",
+      "timestamp": "2024-01-01T00:00:05Z"
+    },
+    {
+      "id": "step_2",
+      "type": "tool",
+      "tool_name": "search",
+      "input": {"query": "weather"},
+      "output": {"result": "sunny"},
+      "timestamp": "2024-01-01T00:00:10Z"
+    },
+    {
+      "id": "step_3",
+      "type": "message",
+      "role": "assistant",
+      "content": "It is sunny",
+      "timestamp": "2024-01-01T00:00:20Z"
+    }
+  ]
+}
