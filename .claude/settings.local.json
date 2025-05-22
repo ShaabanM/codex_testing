@@ -1,0 +1,12 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(git checkout:*)",
+      "Bash(mkdir:*)",
+      "Bash(python -m pytest agent_log_ontology/tests/test_enhanced_ontology.py::TestEnhancedOpenAIConnector::test_enhanced_connector -v)",
+      "Bash(make test:*)",
+      "Bash(git add:*)"
+    ],
+    "deny": []
+  }
+}

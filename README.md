@@ -1,6 +1,6 @@
 # Agent Log Ontology
 
-This repository demonstrates a minimal ontology for autonomous agent execution logs. The ontology is implemented with Pydantic models and includes a connector for the OpenAI `agent-traces` format.
+This repository provides a comprehensive ontology for autonomous agent execution logs. It includes both a minimal implementation and an enhanced seven-layer architecture designed for enterprise-scale agent oversight platforms. The ontology is implemented with Pydantic models and includes connectors for various agent formats.
 
 ```mermaid
 classDiagram
@@ -31,6 +31,20 @@ classDiagram
     AgentStep --> "*" ToolCall
     AgentStep --> "*" AgentStep
 ```
+
+## Enhanced Ontology
+
+The repository now includes a comprehensive seven-layer ontology for enterprise agent oversight:
+
+- **Identity Layer**: Agent identification and capabilities
+- **Perception Layer**: Input processing and observation
+- **Cognition Layer**: Reasoning, knowledge, and metacognition
+- **Action Layer**: Planning and execution
+- **State Layer**: Comprehensive state management
+- **Interaction Layer**: Communication interfaces
+- **Oversight Layer**: Monitoring, anomaly detection, and compliance
+
+See [ENHANCED_ONTOLOGY.md](ENHANCED_ONTOLOGY.md) for detailed documentation.
 
 ## Quick start
 
